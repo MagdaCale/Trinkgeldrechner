@@ -11,7 +11,7 @@ body {
   margin-inline: auto;
   width: 90%;
   max-width: 90rem;
-  background: url('../public/img/Unbenanntes_Projekt.jpg') center/cover no-repeat;
+  background: url('/img/Unbenanntes_Projekt.jpg') center/cover no-repeat;
 }
 
 h1 {
