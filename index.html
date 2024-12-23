@@ -1,13 +1,61 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trinkgeldrechner</title>
+  <script type="module" src="/src/main.ts"></script>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <main>
+
+    <section class="tip-calculator">
+      <fieldset>
+        <div>
+          <button id="delet">X</button>
+        </div>
+
+
+        <h1>Gimme your Monee</h1>
+
+        <div class="form-group">
+          <label for="betrag">Rechnungsbetrag</label>
+          <input type="number" id="betrag" placeholder="0 €">
+        </div>
+
+        <div class="form-group">
+          <label for="personen">Anzahl der Personen</label>
+          <input type="number" id="personen" placeholder="Personen">
+        </div>
+
+        <div class="form-group">
+          <label for="service">Servicequalität</label>
+          <select id="service">
+            <option value="">Wähle...</option>
+            <option value="2">Schlechter Service (2%)</option>
+            <option value="10">Guter Service (10%)</option>
+            <option value="20">Hervorragender Service (20%)</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <button id="btn">Berechnen</button>
+        </div>
+
+        <div class="results">
+          <p id="trinkgeld">Trinkgeld: <span></span></p>
+          <p id="gesamtBetrag">Gesamtbetrag: <span></span></p>
+          <p id="proPeron">Betrag pro Person: <span></span></p>
+        </div>
+
+      </fieldset>
+    </section>
+  </main>
+
+</body>
+
 </html>
