@@ -8,7 +8,6 @@ const deletButton = document.querySelector('#delet') as HTMLButtonElement;
 
 // - querySelector nutzt die gleichen kombinierten Selektoren wie CSS
 // - Sucht ein <span>, das sich innerhalb des Elements mit der ID "trinkgeld" befindet -> kann sogar verschachtelt sein
-// -
 const trinkgeldSpan = document.querySelector('#trinkgeld span') as HTMLSpanElement;
 const gesamtBetragSpan = document.querySelector('#gesamtBetrag span') as HTMLSpanElement;
 const proPersonSpan = document.querySelector('#proPeron span') as HTMLSpanElement;

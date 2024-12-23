@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split the Monee</title>
+    <script type="module" src="/src/split/script.ts"></script>
+    <link rel="stylesheet" href="/src/split/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="split-calculator">
+            <fieldset>
+                <div class="delet-container">
+                    <button id="delet">X</button>
+                </div>
+                <h1>Split the Monee</h1>
+
+                <div class="grid">
+                    <div class="person">
+                        <label for="person1">Person 1:</label>
+                        <input type="number" id="person1" placeholder="Dein Betrag">
+
+                        <p id="person1-paid"><span></span></p>
+                        <p id="person1-diff"><span></span></p>
+                    </div>
+                    <div class="person">
+                        <label for="person2">Person 2:</label>
+                        <input type="number" id="person2" placeholder="Dein Betrag">
+
+                        <p id="person2-paid"><span></span></p>
+                        <p id="person2-diff"><span></span></p>
+                    </div>
+                    <div class="person">
+                        <label for="person3">Person 3:</label>
+                        <input type="number" id="person3" placeholder="Dein Betrag">
+
+                        <p id="person3-paid"><span></span></p>
+                        <p id="person3-diff"><span></span></p>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <button id="btn">Aufteilen</button>
+                </div>
+
+                <div class="results">
+
+                </div>
+                <div class="move-calc">
+                    <a href="../../index.html">Split the Tip</a>
+                </div>
+
+
+            </fieldset>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
